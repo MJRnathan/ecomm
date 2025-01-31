@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, Input, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-primary-button',
@@ -11,6 +11,8 @@ import { Component, input, output } from '@angular/core';
 })
 export class PrimaryButtonComponent {
   label = input('');
+  @Input() disabled: boolean = false; // Add this line!
+
 
   btnClicked = output();
 

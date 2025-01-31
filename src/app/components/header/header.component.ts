@@ -9,7 +9,7 @@ import { Component, inject, signal } from '@angular/core';
   imports: [PrimaryButtonComponent, RouterLink],
   template: `
     <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between items-center">
-      <button class="text-xl" routerLink="/">My Store at 51:00</button>
+      <button class="text-xl" routerLink="/">ApleKart</button>
       <app-primary-button
         [label]="'Cart (' + cartService.cart().length + ')'"
         routerLink="/cart"
